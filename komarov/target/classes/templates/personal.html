@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal</title>
+</head>
+<body>
+  <h3>Personal Area</h3>
+  <div>
+        <p>Personal Info</p>
+        <div>
+            <div>
+                <p>Username: </p>
+                <p th:text="${user.getFullName()}"></p>
+            </div>
+            <div>
+                <p>Phone: </p>
+                <p th:text="${user.getPhoneNumber()}"></p>
+            </div>
+            <p>Access only authorize users!</p>
+            <a href="/">Back to start</a>
+        </div>
+  </div>
+</body>
+</html>
